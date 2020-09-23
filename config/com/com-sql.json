@@ -1,0 +1,8 @@
+{
+    "GET_EPCOT_ORDER_DETAILS": "select bill_to_name, sales_order_id, order_date, INTERNAL_HEADER_TYPE, COM_COMPANY_NUMBER, order_status_id, original_order_number from ecm.sales_order where ORIGINAL_ORDER_NUMBER =:Original_order_number",
+    "GET_COM_ORDER_BY_SALES_ORDER_ID": "select * from ECM.SALES_ORDER_COM_REL where sales_order_id =:Sales_order_id",
+    "GET_ORDER_HEADER": "select * from AMFLIBF.MBBWCPP@CORP400 order_history_header where BWCVNB =:Com_order_number and BWAENB =:Com_company_number and BWDCCD =:Internal_header_type",
+    "GET_LINE_ITEM": "select * from AMFLIBF.MBGGCPP@CORP400 orderlineitem where GGCVNB =:Ggcvnb and GGAENB =:Ggaenb and GGDCCD =:Ggdccd",
+    "GET_ORDER_DETAIL": "select * from AMFLIBF.MBDRREP@CORP400 where DRCVNB =:Drcvnb and DRAENB =:Draenb and DRDCCD =:Drdccd",
+    "GET_SHIPMENT_HEADER": "select * from AMFLIBF.MBDHREP@CORP400 where DHCVNB =:Dhcvnb AND DHAENB =:Dhaenb and DHDCCD =:Dhdccd"
+}

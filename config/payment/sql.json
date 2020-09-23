@@ -1,0 +1,5 @@
+{
+    "SELECT_AUTHORIZATION_VW": "select AuthOrderId, AuthProfileId, DateAuthorizationExpires, DateCreated, message, active from chaseauthorizationvw where OrderNumber = @OrderNumber",
+    "SELECT_CREDIT_CARD_PAYMENT_VW": "select Status, CapturedAmount, SettledAmount, vw.* from creditcardpaymentvw vw where OrderNumber = @OrderNumber",
+    "SELECT_CONSUMER_ORDER_STATUS": "select Status from consumerorder where OrderNumber = @OrderNumber"
+}

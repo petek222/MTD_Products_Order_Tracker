@@ -1,0 +1,4 @@
+{
+    "MAX_ORDERS_TO_PROCESS" : "6",
+    "MAX_FAILED_ORDER_RETRIES" : "3"
+}
